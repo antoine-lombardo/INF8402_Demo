@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block content %}
+	<di>
+		<div>
+			<div>
+				<form class="validate-form" method="POST" action="/login">
+					<span>
+						Login
+					</span>
+					<div class="validate-input" data-validate = "Username is required">
+						<input type="text" name="username" placeholder="Username">
+						<span></span>
+					</div>
+					<div class="validate-input" data-validate = "Password is required">
+						<input type="password" name="password" placeholder="Password">
+						<span></span>
+					</div>
+					<div>
+						<button>
+							Login
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+{% endblock %}
